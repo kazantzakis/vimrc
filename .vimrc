@@ -18,3 +18,8 @@ set laststatus=2        " Always show statusline
 
 " Tabline
 set showtabline=2       " Always show tabline
+
+" Search
+set incsearch                 " Incremental search
+set hlsearch                  " Highlight matches
+set ignorecase                " Case-insensitive
