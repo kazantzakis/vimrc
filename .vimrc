@@ -1,8 +1,9 @@
-set mouse=              " Disable mouse so you can copy highlighted text                                                                                           
-syntax on               " Enable syntax highlighting
-color desert            " Enable color
-set number              " Show line numbers
-set cursorline          " Highlight current line
+set mouse=                              " Disable mouse so you can copy highlighted text                                                                          
+syntax on                               " Enable syntax highlighting
+color desert                            " Enable color
+set number                              " Show line numbers
+set cursorline                          " Highlight current line
+autocmd BufWritePre *.* :%s/\s\+$//e    " Auto remove trailing whitespace on save
 
 " Indentation
 set expandtab           " Spaces, not tabs
