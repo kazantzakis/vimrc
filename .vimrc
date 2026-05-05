@@ -20,6 +20,6 @@ set laststatus=2        " Always show statusline
 set showtabline=2       " Always show tabline
 
 " Search
-set incsearch                 " Incremental search
+set incsearch                 " Incremental search. Move the highlight as you add characters
 set hlsearch                  " Highlight matches
 set ignorecase                " Case-insensitive
