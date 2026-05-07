@@ -15,11 +15,18 @@ set smarttab            " Always use shiftwidth
 set autoindent          " Apply the indentation of the current line to the next
 
 " Statusline
-set laststatus=2        " Always show statusline
+set laststatus=2                        " Always show statusline
+set statusline+=\$>\ %{getcwd()}        " Show current working directory
+set statusline+=\ %t\                   " Tail of the filename
+set statusline+=[%{&ff}]                " File format (unix/dos)
+set statusline+=%y                      " Filetype
+set statusline+=%=                      " Switch to right side                                                                           
+set statusline+=\ %p%%\                 " Percentage through file
+set statusline+=\ %l:%c\                " Line:Column
 
 " Tabline
-set showtabline=2       " Always show tabline
+set showtabline=2                       " Always show tabline
 
 " Search
-set incsearch                 " Incremental search. Move the highlight as you add characters
-set hlsearch                  " Highlight matches
+set incsearch                           " Incremental search. Move the highlight as you add characters
+set hlsearch                            " Highlight matches
