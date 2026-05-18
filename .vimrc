@@ -30,3 +30,11 @@ set showtabline=2                       " Always show tabline
 " Search
 set incsearch                           " Incremental search. Move the highlight as you add characters
 set hlsearch                            " Highlight matches
+
+" line numbers
+highlight LineNr ctermbg=233            " Set color for line number background
+
+" Folding
+set foldmethod=indent                   " The folds are automatically defined by the indent of the lines
+set foldlevelstart=99                   " Start with folds open
+set foldtext=getline(v:foldstart)       " shows the function declaration as the folded line
