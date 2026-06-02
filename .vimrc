@@ -38,3 +38,7 @@ highlight LineNr ctermbg=233            " Set color for line number background
 set foldmethod=indent                   " The folds are automatically defined by the indent of the lines
 set foldlevelstart=99                   " Start with folds open
 set foldtext=getline(v:foldstart)       " shows the function declaration as the folded line
+
+" Shortcuts
+nnoremap <F2> :set number!<CR>          " Toggle line numbers
+nmap <F3> :NERDTreeToggle<CR>           " Toogle NERDTree
